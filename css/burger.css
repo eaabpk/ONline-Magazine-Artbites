@@ -278,7 +278,7 @@
         height: 0%;
     }
 
-    /* Show the logo div - leftSide */
+    /* Show the logo div - logo_container */
     .burger-container .toggler ~ .menu > div > div {
         opacity: 1;
         transition: opacity 0.4s ease;
@@ -294,7 +294,7 @@
 
 
     /* Move the categories div centrally */
-    .leftSide {
+    .logo_container {
         width: 20%;
     }
 
