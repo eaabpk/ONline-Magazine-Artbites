@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="robot.txt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artbites magazine</title>
     <meta name="description" content="Artbites is a local magazine with a passion to promote the local art scenes in Denmark and especially in Aarhus. Our goal is to inform, engage, encourage and inspire our readers who are curious for art & culture.">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" a href="css/mystyle.css">
     <link rel="stylesheet" a href="css/burger.css">
+    <link rel="stylesheet" a href="css/mystyle.css">
     <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
 </head>
 
 <body>
+   <header>
     <div class="burger-container">
         <!--<div class="logo">
             <img class="logo" src="images/logo_Artbites.png">
@@ -28,7 +29,7 @@
                 <div class="leftSide">
                     <!--<div class="logo">-->
                        <a href="index.html" id="logo">
-                        <img class="logo" src="../images/logo_Artbites.png">
+                        <img class="logo" src="../images/logo_Artbites.png" alt="Logo_Artbites">
                     </a>
                     <!--</div>-->
                 </div>
@@ -83,42 +84,19 @@
             </div>
         </div>
     </div>
+</header>
 
-    <div class="content-container">
-        <section class="art">
-            <h1>Art &amp; Design</h1>
-        </section>
+   <div class="wrapper_container">
+    <div class="video-container">
+            <header class="homequote_container">
 
-        <section class="music">
-            <h1>Music</h1>
-        </section>
-
-        <section class="film">
-            <h1>Films</h1>
-        </section>
-
-        <section class="literature">
-            <h1>Literature</h1>
-        </section>
-
-        <section class="theatre">
-            <h1>Theatre</h1>
-        </section>
-
-        <section class="photo">
-            <h1>Photo series</h1>
-        </section>
-    </div>
-
-    <section class="video-container">
-            <header class="header-container">
-
-                <h1 class="header-text">I have created a space which virtually erases the boundaries between inside and outside."</h1>
-                <p class="header-text">"Your Rainbow Panorama" by Olafur Eliasson, Danish-Icelandic artist</p>
+                <h1 class="quote-text">I have created a space which virtually erases the boundaries between inside and outside."</h1>
+                <p class="quotecredit-text">"Your Rainbow Panorama" by Olafur Eliasson, Danish-Icelandic artist</p>
             </header>
             <video autoplay loop muted src="yourrainbowpanorama.mp4" class="video"></video>
-    </section>
-
+            <p class="image_credit">Olafur Eliasson. Photo credit: Runa Maya Mørk Huber ;&#124; Studio Olafur Eliasson. © 2017 Olafur Eliasson.</p>
+    </div>
+</div>
 </body>
 </html>
 
