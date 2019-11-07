@@ -300,8 +300,8 @@ body {
 
 .article_image {
     width: 100%;
-    max-height: 100%;
-    justify-content: center;
+    display: block;
+    margin: auto;
 }
 
 /*HYPERLINKS and other links*/
@@ -401,12 +401,12 @@ body {
 }
 
 .footer_container {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     width: 110%;
     height: 200px;
     background: black;
-    align-items: center;
+    text-align: center;
 
 
 }
@@ -458,21 +458,19 @@ btnsubscribe {
 .newsletter {
     margin: 20px 0 20px 0;
     text-align: center;
+
+
 }
 
 .contact_form {
-    padding-left: 20px;
-    width: 120px;
-    margin-top: 10px;
-    margin-right: 20px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
 
 }
 
 /*WRITE US */
 
-.contact_form {
-    margin: 20px 0 20px 0;
-}
 
 .btncontact {
     display: flex;
@@ -502,18 +500,12 @@ btnsubscribe {
 /*SOCIAL MEDIA*/
 .social_menu {
     position: absolute;
-    display: block;
-
-
+    display: inline-block;
 }
 
-.social_menu ul li {
-    list-style: none;
-    padding-top: 5x;
-    padding-left: 90px;
-}
 
-.social_menu ul li .fab {
+
+.social_menu ul .fab {
     font-size: 25px;
     line-height: 20px;
     transition: .6s;
@@ -523,6 +515,9 @@ btnsubscribe {
 
 }
 
+.icons {
+    justify-content: center;
+}
 
 /* Styling the Photo Story page */
 .heading {
@@ -634,22 +629,29 @@ btnsubscribe {
 
     }
 
-.audio_text {
-    font-style: italic;
-    font-weight: bold;
-    align-items: center;
-    font-size: 14px;
-    border-top: 4px solid #EFBD59;
-    border-right: 4px solid #A3BE8C;
-    border-left: 4px solid #A3BE8C;
-    padding-top: 11px;
-    padding-left: 11px;
-    padding-right: 11px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    .audio_text {
+        font-style: italic;
+        font-weight: bold;
+        align-items: center;
+        font-size: 14px;
+        border-top: 4px solid #EFBD59;
+        border-right: 4px solid #A3BE8C;
+        border-left: 4px solid #A3BE8C;
+        padding-top: 11px;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
 
 
-}
+    }
+
+    .article_image {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
     .wrapper_container {
         padding: 16px 24px 16px 24px;
         margin: auto;
