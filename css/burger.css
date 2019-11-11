@@ -1,383 +1,272 @@
-.burger-container .toggler {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
-
 .burger-container .burger {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*Burger line */
+/*Burger lines - the empty div in index.html */
 
-.burger-container .burger > div {
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
+.burger-container .burger>div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
 }
 
 /* Top and bottom lines */
-.burger-container .burger > div:before,
-.burger-container .burger > div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
+.burger-container .burger>div:before,
+.burger-container .burger>div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
 }
 
 /* Moves line down */
-.burger-container .burger > div:after {
-    top: 10px;
+.burger-container .burger>div:after {
+  top: 10px;
 }
 
 /* Toggler animate. I want to animate the burger not the checkbox */
-.burger-container .toggler:checked + .burger > div {
-    transform: rotate(135deg);
+.burger-container.active .burger>div {
+  transform: rotate(135deg);
 }
 
 /* Turn lines into X */
-.burger-container .toggler:checked + .burger > div:before,
-.burger-container .toggler:hover + .burger > div:before,
-.burger-container .toggler:checked + .burger > div:after,
-.burger-container .toggler:hover + .burger > div:after {
-    top: 0;
-    transform: rotate(90deg);
+.burger-container.active .burger>div:before,
+.burger-container.active .burger>div:after {
+  top: 0;
+  transform: rotate(90deg);
 }
 
 /* Rotate on hover when checked */
-.burger-container .toggler:checked + .burger > div,
-.burger-container .toggler:hover + .burger > div {
-    transform: rotate(90deg);
+.burger-container.active .burger>div {
+  transform: rotate(90deg);
 }
 
 /*Show menu-from hidden to visible*/
 
-.burger-container .toggler:checked ~ .menu,
-.burger-container .toggler:hover ~ .menu,
+#menu-list.active,
 .subcategory:hover {
-    visibility: visible;
+  visibility: visible;
 }
 
-.burger-container .toggler:checked ~ .menu > div,
-.burger-container .toggler:hover ~ .menu > div {
-    transform: scale(1);
+#menu-list.active {
+  /* transform: scale(1); */
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
-.burger-container .toggler:checked ~ .menu > div > div,
-.burger-container .toggler:hover ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease;
+
+/* mobile */
+#menu-list {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: -300px;
+  background: white;
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  margin-top: 60px;
+  padding: 10px 60px 40px;
+  /* transform: scale(0); */
+  transition: all 0.4s ease;
+  opacity: 0.4;
+  z-index: 1;
 }
 
-.burger-container .menu {
-
-    width: 100%;
-
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#menu-list li {
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  background: white;
+  position: relative;
+  display: block;
 }
 
-.burger-container .menu > div {
-    position: absolute;
-    background: white;
-    border-radius: 10%;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    flex: none;
-    align-items: flex-start;
-    justify-content: left;
-    text-align: left;
-    padding: 3rem;
-    transform: scale(0);
-    transition: all 0.4s ease;
+#menu-list li a {
+  display: block;
+  padding: 0 15px;
+  color: black;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
 }
 
-.burger-container .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+#menu-list ul {
+  position: absolute;
+  top: 60px;
+  display: none;
 }
 
-.burger-container .menu > div > div > ul > li {
-    list-style: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-align: left;
+#menu-list li:hover>ul {
+  display: none;
 }
 
-.burger-container .menu > div > div > ul > li {
-    color: white;
-    text-decoration: none;
-    transition: color 0.4s ease;
+#menu-list ul li {
+  width: 150px;
+  float: none;
+  display: list-item;
+  position: relative;
 }
 
-.menu ul {
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-right: 30px;
+.art-link,
+.art-link~ul li {
+  border-left: 6px solid #5E81AC;
+  height: 48px;
 }
 
-.menu ul li {
-    background: white;
-    position: relative;
-    list-style: none;
-    display: block;
+.music-link,
+.music-link~ul li {
+  border-left: 6px solid #A3BE8C;
+  height: 48px;
 }
 
-.menu ul li a {
-    display: block;
-    padding: 0 15px;
-    color: black;
-    text-decoration: none;
-    line-height: 60px;
-    font-size: 20px;
+.film-link,
+.film-link~ul li {
+  border-left: 6px solid #4C566A;
+  height: 48px;
 }
 
-.menu ul ul {
-    position: absolute;
-    top: 60px;
-    display: none;
+.literature-link,
+.literature-link~ul li {
+  border-left: 6px solid #EFBD59;
+  height: 48px;
 }
 
-.menu nav ul li:hover > ul {
-    display: block;
+.theatre-link,
+.theatre-link~ul li {
+  border-left: 6px solid #BF616A;
+  height: 48px;
 }
 
-.menu ul ul li {
-    width: 150px;
-    float: none;
-    display: list-item;
-    position: relative;
+.photo-link,
+.photo-link~ul li {
+  border-left: 6px solid #987A92;
+  height: 48px;
 }
 
-.art-link {
-    border-left: 6px solid #5E81AC;
-    height: 48px;
-}
-
-.music-link {
-    border-left: 6px solid #A3BE8C;
-    height: 48px;
-}
-
-.film-link {
-    border-left: 6px solid #4C566A;
-    height: 48px;
-}
-
-.literature-link {
-    border-left: 6px solid #EFBD59;
-    height: 48px;
-}
-
-.theatre-link {
-    border-left: 6px solid #BF616A;
-    height: 48px;
-}
-
-.photo-link {
-    border-left: 6px solid #987A92;
-    height: 48px;
-}
-
-.art-link:hover {
-    background: #5E81AC;
-    color: white;
+.art-link:hover,
+.art-link~ul li:hover {
+  background: #5E81AC;
+  color: white;
 }
 
 .music-link:hover {
-    background: #A3BE8C;
-    color: white;
+  background: #A3BE8C;
+  color: white;
 }
 
 .film-link:hover {
-    background: #4C566A;
-    color: white;
-    z-index: 1000;
+  background: #4C566A;
+  color: white;
+  z-index: 1000;
 }
 
 .subcategory_films:hover {
-    background: #4C566A;
-    color: white;
+  background: #4C566A;
+  color: white;
 }
 
 .literature-link:hover {
-    background: #EFBD59;
-    color: white;
+  background: #EFBD59;
+  color: white;
 }
 
 .theatre-link:hover {
-    background: #BF616A;
-    color: white;
+  background: #BF616A;
+  color: white;
 }
 
 .photo-link:hover {
-    background: #987A92;
-    color: white;
+  background: #987A92;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
 
-    .burger-container .menu {
-        display: none;
-    }
+  /* Hide the burger menu on PCs */
+  .burger-container .toggler,
+  .burger-container .burger {
+    visibility: hidden;
+  }
 
-    /* Hide the burger menu on PCs */
-    .burger-container .toggler,
-    .burger-container .burger {
-        visibility: hidden;
-    }
+  /* Show the horizontal menu on PCs */
+  .burger-container .toggler~.menu {
+    visibility: visible;
+    display: inline-block;
+    overflow: visible;
+  }
 
-    /* Show the horizontal menu on PCs */
-    .burger-container .toggler ~ .menu {
-        visibility: visible;
-        display: inline-block;
-        overflow: visible;
-    }
+  /* Change the position of the logo */
+  .logo {
+    height: 60px;
+    position: relative;
+    display: inline-block;
+  }
 
-    /* Change the position of the logo */
-    .logo {
-        height: 60px;
-        position: relative;
-        display: inline-block;
-    }
+  #menu-list {
+    width: 100%;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: auto;
+    left: 0;
+    background: white;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    margin-top: 60px;
+    padding: 20px 60px 30px;
+    transition: all 0.4s ease;
+    opacity: 1;
+    z-index: 1;
+  }
 
-    /* Directly show the top side div */
-    .burger-container .toggler ~ .menu > div {
-        transform: scale(1);
-        height: 0%;
-    }
+  /* Change the display of the submenu items */
+  #menu-list>li {
+    display: inline-block;
+  }
 
-    /* Show the logo div - logo_container */
-    .burger-container .toggler ~ .menu > div > div {
-        opacity: 1;
-        transition: opacity 0.4s ease;
-    }
+  /* Show the submenu items on hover */
+  #menu-list>li>a:hover {
+    display: block;
+    visibility: visible;
+  }
 
-    /* Show the categories div */
-    .burger-container .toggler ~ .menu .menu2 {
-        border-bottom: 1px solid;
-        border-color: black;
-    }
+  /* Show the submenu items on hover */
+  #menu-list li:hover>ul,
+  #menu-list li ul:hover {
+    position: absolute;
+    top: 48px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-
-
-
-    /* Move the categories div centrally */
-    .logo_container {
-        width: 20%;
-    }
-
-    /*.burger-container .menu > div {
-        background: white;
-        border-radius: 10%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex: none;
-        align-items: flex-start;
-        justify-content: left;
-        text-align: left;
-        padding: 3rem;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }*/
-
-    /*.burger-container .menu > div > div {
-            text-align: center;
-            max-width: 90vw;
-            max-height: 100vh;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }*/
-
-    /*.burger-container .menu > div > div > ul > li {
-                list-style: none;
-                color: white;
-                font-size: 1.5rem;
-                padding: 1rem;
-                text-align: left;
-            }*/
-
-    /* Change the display of the submenu items */
-    .burger-container .menu > div > div > ul > li {
-        /*color: white;
-                text-decoration: none;
-                transition: color 0.4s ease;*/
-        display: inline-block;
-    }
-
-    /* Show the submenu items on hover */
-    .burger-container .menu > div > div > ul > li > a:hover {
-        display: block;
-        visibility: visible;
-    }
-
-    /* Show the submenu items on hover */
-    .menu ul li:hover > ul {
-        position: absolute;
-        top: 60px;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    .menu2 ul li .films_reviews:hover {
-        color: blue;
-    }
-}
-
-/*.menu nav ul li:hover > ul {
-        display: block;
-    }*/
-
-/*.menu nav ul li ul:hover {
-        display: block;
-    }*/
-
-/*.menu ul ul li {
-        width: 150px;
-        float: none;
-        display: list-item;
-        position: relative;
-    }*/
-
-/*.menu ul ul li:hover {
-        width: 150px;
-        float: none;
-        display: list-item;
-        position: relative;
-        display: block;
-        visibility: visible;
-    }*/
+  .dropdown ul li .films_reviews:hover {
+    color: blue;
+  }
 }

@@ -1,187 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="robot.txt">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="robot.txt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Artbites magazine</title>
-    <meta name="description" content="Artbites Film Review section features reviews and analysis of mainstream, art-house, and indipendent filmmaking from around Denmark. The user can go behind-the-scenes of upcoming films with their casts and directors, read interviews and find out more about the upcoming movies.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" a href="../css/burger.css">
-    <link rel="stylesheet" a href="../css/mystyle.css">
+    <meta
+      name="description"
+      content="Artbites Film Review section features reviews and analysis of mainstream, art-house, and indipendent filmmaking from around Denmark. The user can go behind-the-scenes of upcoming films with their casts and directors, read interviews and find out more about the upcoming movies."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" a href="../css/burger.css" />
+    <link rel="stylesheet" a href="../css/mystyle.css" />
+    <link rel="stylesheet" a href="../css/filmreviews.css" />
     <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
-</head>
+    <script src="../js/burger.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="burger-container">
-            <!--<div class="logo">
-            <img class="logo" src="images/logo_Artbites.png">
-        </div>-->
-
-            <input type="checkbox" class="toggler">
-            <div class="burger">
-                <div></div>
-            </div>
-            <div class="logo_container">
-                        <!--<div class="logo">-->
-                        <a href="index.html" id="logo">
-                            <img class="logo" src="../images/logo_Artbites.png" alt="Logo_Artbites">
-                        </a>
-                        <!--</div>-->
-                    </div>
-            <div class="menu">
-                <div class="menu1">
-
-                    <div class="menu2">
-                        <ul>
-                            <li>
-                                <a href="#" class="art-link" id="category">Art &amp; Design</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="../subpages/artanddesign.html">Artists</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="music-link" id="category">Music</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="../subpages/musicinterviews.html">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="film-link" id="category">Films</a>
-                                <ul class="subcategory_films">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="../subpages/filmreviews.html">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="#" class="literature-link" id="category">Literature</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="theatre-link" id="category">Theatre</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="photo-link">Photo series</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="burger-container">
+        <!--<div class="logo">
+                <img class="logo" src="images/logo_Artbites.png">
+            </div>-->
+        <div class="burger">
+          <div></div>
         </div>
+      </div>
+      <div class="logo_container">
+        <a href="../index.html" id="logo">
+          <img
+            class="logo"
+            src="../images/logo_Artbites.png"
+            alt="Logo_Artbites"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul id="menu-list">
+          <li>
+            <a href="#" class="art-link">Art &amp; Design</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="artanddesign.html">Artists</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="music-link">Music</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li>
+                <a href="musicinterviews.html">Interviews</a>
+              </li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="film-link">Films</a>
+            <ul class="subcategory_films">
+              <li><a href="#">News</a></li>
+              <li><a href="filmreviews.html">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="literature-link">Literature</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="theatre-link">Theatre</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="photo-link">Photo series</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <div class="title-and-breadcrumbs">
         <h1 class="page_title" id="reviews">REVIEWS</h1>
-        <p class="breadcrumbs"><a href="../index.html" class="link_text">Home</a> &gt; <a href="films.html" class="link_text">Films</a> &gt; <a href="../subpages/filmreviews.html" class="link_text">Reviews</a> &gt; The Guilty</p>
-        <div class="wrapper_container">
+        <p class="breadcrumbs">
+          <a href="../index.html" class="link_text">Home</a> &gt;
+          <a href="films.html" class="link_text">Films</a> &gt;
+          <a href="../filmreviews.html" class="link_text">Reviews</a>
+          &gt; The Guilty
+        </p>
+      </div>
+      <div class="wrapper_container">
+        <article class="article_content">
+          <div class="article-header">
+            <h1>
+              THE GUILTY &#45; A STUNNING CRIME TRILLER THAT TAKES PLACE ONLY IN
+              A SINGLE ROOM
+            </h1>
+            <br />
+            <p class="quote_film">
+              “Film that gives every single audience member a completely unique
+              experience.” Gustav Moeller
+            </p>
+            <br />
+            <img
+              src="../images/the-guilty-poster_2018.jpg"
+              class="article_image"
+              alt="The Guilty_poster"
+            />
+            <p class="image_credit">Credit&#58; Showtimes.com</p>
 
+            <p class="dateandauthor">
+              November 5, 2019<br />
+              Reviewed by Bilyana Karamfilova
+            </p>
+            <br />
+          </div>
+          <h2 class="headers">Synopsis</h2>
+          <br />
+          <p class="articlefilm_text">
+            The feature debut of
+            <a href="https://www.imdb.com/name/nm7546166/" class="hiperlink"
+              >Gustav Moeller</a
+            >
+            <a href="https://www.imdb.com/title/tt6742252/" class="hiperlink"
+              >“The Guilty”</a
+            >
+            (original title: Den skyldige) is a suspensful thriller with
+            hostages, stalking, burglary, alcohol, weapons, blood, sirens and a
+            suicide on a bridge where none of this is visible, but you can
+            imagine and feel everything very vividly.
+          </p>
+          <br />
+          <p class="articlefilm_text">
+            Asger Holm is a former police officer who is stuck in the role of
+            dispatcher at the Copenhagen emergency call centre 112.
+          </p>
+          <br />
+          <p class="articlefilm_text">
+            We can see from the very beginning that he is not very enthusiastic
+            to be there, and this job is a kind of a punishment for him. He
+            would rather do something other than just sitting there where
+            everything stays the same every day and is so boring for his
+            detective soul.
+          </p>
+          <br />
+          <img
+            src="../images/the%20guilty-Asger-Holm.jpg"
+            class="article_image"
+            alt="Asger_Holm"
+          /><br />
+          <p class="image_credit">
+            Jakob Cedergren as Asger Holm<br />
+            Credit&#58; VULTURE.com, Photo&#58; Nikolaj Moeller
+          </p>
+          <br />
+          <p class="articlefilm_text">
+            Asger receives many calls and some of them are unjustified. He is
+            not quite willing to answer them and, even if he is doing his job,
+            he resents the ringers (he even mumbles out to one of them: “It’s
+            all your fault.”). His lack of emotions is very frustrating and
+            there is no charm at all in his character. The mixture of boredom
+            and animosity reaches its peak just before the end of his last shift
+            when he answers the emergency call from a kidnapped woman named Iben
+            (<a
+              href="https://en.wikipedia.org/wiki/Jessica_Dinnage"
+              class="hiperlink"
+              >Jessica Dinage</a
+            >) who is travelling in her kidnapper’s car. He puts all his efforts
+            and actions limited only by the tool – the phone, to rescue her.
+          </p>
+          <br /><br />
+          <img
+            src="../images/The%20dispatcher%20room.jpeg"
+            class="article_image"
+            alt="The dispatcher room"
+          /><br />
+          <p class="image_credit">
+            The Emergency Call Center<br />
+            Credit&#58; FILMMAKERMAGAZINE.com, Photo&#58; Nikolaj Moeller
+          </p>
+          <br />
+          <p class="articlefilm_text">
+            The movie is shot in 13 days with 3 cameras and has a low-cost
+            budget of half a million euro. It takes place only in two adjoining
+            rooms of the 112 dispatch call center. This minimalistic setup has a
+            great effect on the movie and increases its tension.
+          </p>
+          <br />
+          <h2 class="headers">Inspirations</h2>
+          <br />
+          <p class="articlefilm_text">
+            One of the biggest inspiration for “The Guilty” is the investigative
+            podcast of Sarah Koenig and Julie Snyder’s
+            <a href="https://serialpodcast.org/" class="hiperlink">“Serial”</a>
+            which is a true crime story about the murder of a high-school
+            student in Baltimore, 1999.
+          </p>
+          <br /><br />
+          <p class="highlight_text">
+            “With every episode I got new information about the people involved
+            and the places and occurrences. With every episode my image of these
+            people changed,” he said. “That was a direct inspiration that me and
+            my co-writer talked about: how to organically add information and
+            organically have the images change throughout the film.”<br />
+            - Gustav Möller
+          </p>
+          <br /><br />
+          <p class="articlefilm_text">
+            His cinematic inspiration comes from Sidney’s Lumet
+            <a href="https://www.imdb.com/title/tt0072890/" class="hiperlink"
+              >“Dog Day Afternoon”</a
+            >. He shot the whole movie in a chronological order with 3 cameras
+            which creates the real time feeling.
+          </p>
+          <br /><br />
+          <p class="highlight_text">
+            “The whole feel of that film, the nerve-racking stress that is in
+            that film – that inspired the way we shot the film, using several
+            cameras during very long takes.”<br />
+            - Gustav Möller
+          </p>
+          <br /><br />
+          <p class="video_text">Watch the Trailer</p>
+          <br />
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/abaoKA6rn5k"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe
+          ><br />
+          <p class="image_credit">
+            Trailer-"The Guilty", Credit&#58; YOUTUBE.com
+          </p>
+          <br /><br />
 
-            <article class="article_content">
-                <div class="article-header">
-                    <h1>THE GUILTY &#45; A STUNNING CRIME TRILLER THAT TAKES PLACE ONLY IN A SINGLE ROOM</h1><br>
-                    <p class="quote_film">“Film that gives every single audience member a completely unique experience.” Gustav Moeller</p><br>
-                    <img src="../images/the-guilty-poster_2018.jpg" class="article_image" alt="The Guilty_poster">
-                    <p class="image_credit">Credit&#58; Showtimes.com</p>
+          <p class="articlefilm_text">
+            Gustav Moeller and the co-writer
+            <a href="https://www.imdb.com/name/nm3764055/" class="hiperlink"
+              >Emil Nygaard Albertsen</a
+            >, together with the brilliant performance by
+            <a
+              href="https://en.wikipedia.org/wiki/Jakob_Cedergren"
+              class="hiperlink"
+              >Jakob Cedergren</a
+            >
+            in the leading role skilfully keep the interest of the viewer and
+            challenge his mental and emotional capacity as well as his
+            imagination.
+            <a href="https://www.imdb.com/name/nm2612068/" class="hiperlink"
+              >Oskar Skriver</a
+            >, who is the supervising sound editor, also played a major role in
+            adding to the intrigue of the movie.
+          </p>
+          <br /><br />
 
-                    <p class="dateandauthor">November 5, 2019<br>
-                        Reviewed by Bilyana Karamfilova
-                    </p><br>
+          <p class="articlefilm_text">
+            The end of the movie is mind-blowing. It raises a lot of questions -
+            to what extent should we interfere if something bad happens? How
+            much truth to tell when we must be honest, but we don’t want to be
+            rude? If it is possible to be wrong in one conclusion how can we be
+            sure that we are not wrong in everything?
+          </p>
+          <br /><br />
 
-                </div>
-                <h2 class="headers">Synopsis</h2><br>
-                <p class="articlefilm_text">The feature debut of <a href="https://www.imdb.com/name/nm7546166/" class="hiperlink">Gustav Moeller</a> <a href="https://www.imdb.com/title/tt6742252/" class="hiperlink">“The Guilty”</a> (original title: Den skyldige) is a suspensful thriller with hostages, stalking, burglary, alcohol, weapons, blood, sirens and a suicide on a bridge where none of this is visible, but you can imagine and feel everything very vividly. </p><br>
-                <p class="articlefilm_text">Asger Holm is a former police officer who is stuck in the role of dispatcher at the Copenhagen emergency call centre 112.</p><br>
-                <p class="articlefilm_text">We can see from the very beginning that he is not very enthusiastic to be there, and this job is a kind of a punishment for him. He would rather do something other than just sitting there where everything stays the same every day and is so boring for his detective soul.</p><br>
-                <img src="../images/the%20guilty-Asger-Holm.jpg" class="article_image" alt="Asger_Holm"><br>
-                <p class="image_credit">Jakob Cedergren as Asger Holm<br> Credit&#58; VULTURE.com, Photo&#58; Nikolaj Moeller</p><br>
-                <p class="articlefilm_text">Asger receives many calls and some of them are unjustified. He is not quite willing to answer them and, even if he is doing his job, he resents the ringers (he even mumbles out to one of them: “It’s all your fault.”). His lack of emotions is very frustrating and there is no charm at all in his character. The mixture of boredom and animosity reaches its peak just before the end of his last shift when he answers the emergency call from a kidnapped woman named Iben (<a href="https://en.wikipedia.org/wiki/Jessica_Dinnage" class="hiperlink">Jessica Dinage</a>) who is travelling in her kidnapper’s car. He puts all his efforts and actions limited only by the tool – the phone, to rescue her.</p><br><br>
-                <img src="../images/The%20dispatcher%20room.jpeg" class="article_image" alt="The dispatcher room"><br>
-                <p class="image_credit">The Emergency Call Center<br> Credit&#58; FILMMAKERMAGAZINE.com, Photo&#58; Nikolaj Moeller</p><br>
-                <p class="articlefilm_text">The movie is shot in 13 days with 3 cameras and has a low-cost budget of half a million euro. It takes place only in two adjoining rooms of the 112 dispatch call center. This minimalistic setup has a great effect on the movie and increases its tension.</p><br>
-                <h2 class="headers">Inspirations</h2><br>
-                <p class="articlefilm_text">One of the biggest inspiration for “The Guilty” is the investigative podcast of Sarah Koenig and Julie Snyder’s <a href="https://serialpodcast.org/" class="hiperlink">“Serial”</a> which is a true crime story about the murder of a high-school student in Baltimore, 1999.</p><br><br>
-                <p class="highlight_text">“With every episode I got new information about the people involved and the places and occurrences. With every episode my image of these people changed,” he said. “That was a direct inspiration that me and my co-writer talked about: how to organically add information and organically have the images change throughout the film.”<br>
-                    - Gustav Möller</p><br><br>
-                <p class="articlefilm_text">His cinematic inspiration comes from Sidney’s Lumet <a href="https://www.imdb.com/title/tt0072890/" class="hiperlink">“Dog Day Afternoon”</a>. He shot the whole movie in a chronological order with 3 cameras which creates the real time feeling.</p><br><br>
-                <p class="highlight_text">“The whole feel of that film, the nerve-racking stress that is in that film – that inspired the way we shot the film, using several cameras during very long takes.”<br>
-                    - Gustav Möller</p><br><br>
-                <p class="video_text">Watch the Trailer</p><br>
-                <iframe class="trailer" src="https://www.youtube.com/embed/abaoKA6rn5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-                <p class="image_credit">Trailer-"The Guilty", Credit&#58; YOUTUBE.com</p><br><br>
+          <div class="comment-form">
+            <div class="form-fields">
+              <input type="text" class="input" placeholder="Your name" />
+            </div>
+            <div class="form-fields">
+              <textarea
+                class="input comment"
+                placeholder="Add a comment.."
+                rows="5"
+              ></textarea>
+            </div>
 
-
-                <p class="articlefilm_text">Gustav Moeller and the co-writer <a href="https://www.imdb.com/name/nm3764055/" class="hiperlink">Emil Nygaard Albertsen</a>, together with the brilliant performance by <a href="https://en.wikipedia.org/wiki/Jakob_Cedergren" class="hiperlink">Jakob Cedergren</a> in the leading role skilfully keep the interest of the viewer and challenge his mental and emotional capacity as well as his imagination. <a href="https://www.imdb.com/name/nm2612068/" class="hiperlink">Oskar Skriver</a>, who is the supervising sound editor, also played a major role in adding to the intrigue of the movie.</p><br><br>
-
-                <p class="articlefilm_text">The end of the movie is mind-blowing. It raises a lot of questions - to what extent should we interfere if something bad happens? How much truth to tell when we must be honest, but we don’t want to be rude? If it is possible to be wrong in one conclusion how can we be sure that we are not wrong in everything?</p><br><br>
-
-                <div class="comment-form">
-
-                    <div class="form-fields">
-                        <input type="text" class="input" placeholder="Your name">
-
-                    </div>
-                    <div class="form-fields">
-                        <textarea class="input comment" placeholder="Add a comment.." rows="5"></textarea>
-                    </div>
-
-                    <div class="btn">
-                        <input type="submit" class="button_text" value="Comment">
-
-
-                    </div>
-                </div>
-            </article>
-        </div>
-
+            <div class="btn">
+              <input type="submit" class="button_text" value="Comment" />
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
 
-
-
     <footer>
-        <div class="footer_container">
-            <div class="newsletter">
-                <form action="">
-                    <div class="email-box">
-                        <i class="fas fa-envelope-square"></i>
-                        <input class="textbox" type="email" name="email" value="email" placeholder="Write your email">
-                        <button class="btnsubscribe" type="button" name="button">SUBSCRIBE</button>
-                    </div>
-
-                </form>
+      <div class="footer_container">
+        <div class="newsletter">
+          <form action="">
+            <div class="email-box">
+              <i class="fas fa-envelope-square"></i>
+              <input
+                class="textbox"
+                type="email"
+                name="email"
+                value="email"
+                placeholder="Write your email"
+              />
+              <button class="btnsubscribe" type="button" name="button">
+                SUBSCRIBE
+              </button>
             </div>
-            <div class="contact_form">
-                <a href="#" class="btncontact">Write us</a>
-            </div>
-            <div class="social_menu">
-                <div class="icons">
-                    <ul>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-
-                    </ul>
-                </div>
-            </div>
+          </form>
         </div>
+        <div class="contact_form">
+          <a href="#" class="btncontact">Write us</a>
+        </div>
+        <div class="social_menu">
+          <div class="icons">
+            <ul>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-
-</body></html>
+  </body>
+</html>

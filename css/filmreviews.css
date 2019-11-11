@@ -1,0 +1,43 @@
+/* film review style */
+
+.reviews {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-size: 1.3vw;
+  display: inline-block;
+  border: 2px solid #4C566A;
+  opacity: 0.85;
+  padding: 5px 5px 5px 5px;
+
+}
+
+.articlefilm_text {
+  font-size: 20px;
+  text-justify: inter-word;
+}
+
+.highlight_text {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #4C566A;
+  border-bottom: 1px solid #4C566A;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-width: medium;
+  border-top-width: medium;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.video_text {
+  font-weight: bold;
+}
+
+.trailer {
+  width: 340px;
+  height: 190px;
+}

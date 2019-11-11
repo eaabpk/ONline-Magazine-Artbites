@@ -1,210 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="robot.txt">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="robot.txt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Artbites magazine</title>
-    <meta name="description" content="Artbites is a local magazine with a passion to promote the local art scenes in Denmark and especially in Aarhus. Our goal is to inform, engage, encourage and inspire our readers who are curious for art & culture.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/burger.css">
-    <link rel="stylesheet" href="../css/mystyle.css">
+    <meta
+      name="description"
+      content="Artbites is a local magazine with a passion to promote the local art scenes in Denmark and especially in Aarhus. Our goal is to inform, engage, encourage and inspire our readers who are curious for art & culture."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/burger.css" />
+    <link rel="stylesheet" href="../css/mystyle.css" />
     <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
-</head>
+    <script src="../js/burger.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="burger-container">
-            <!--<div class="logo">
-            <img class="logo" src="images/logo_Artbites.png">
-        </div>-->
-
-            <input type="checkbox" class="toggler">
-            <div class="burger">
-                <div></div>
-            </div>
-            <div class="logo_container">
-                        <!--<div class="logo">-->
-                        <a href="index.html" id="logo">
-                            <img class="logo" src="../images/logo_Artbites.png" alt="Logo_Artbites">
-                        </a>
-                        <!--</div>-->
-                    </div>
-            <div class="menu">
-                <div class="menu1">
-
-                    <div class="menu2">
-                        <ul>
-                            <li>
-                                <a href="#" class="art-link" id="category">Art &amp; Design</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="../subpages/artanddesign.html">Artists</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="music-link" id="category">Music</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="../subpages/musicinterviews.html">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="film-link" id="category">Films</a>
-                                <ul class="subcategory_films">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="../subpages/filmreviews.html">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="#" class="literature-link" id="category">Literature</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="theatre-link" id="category">Theatre</a>
-                                <ul class="subcategory">
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Interviews</a></li>
-                                    <li><a href="#">Events</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="photo-link">Photo series</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="burger-container">
+        <!--<div class="logo">
+                <img class="logo" src="images/logo_Artbites.png">
+            </div>-->
+        <div class="burger">
+          <div></div>
         </div>
+      </div>
+      <div class="logo_container">
+        <a href="../index.html" id="logo">
+          <img
+            class="logo"
+            src="../images/logo_Artbites.png"
+            alt="Logo_Artbites"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul id="menu-list">
+          <li>
+            <a href="#" class="art-link">Art &amp; Design</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="artanddesign.html">Artists</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="music-link">Music</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li>
+                <a href="musicinterviews.html">Interviews</a>
+              </li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="film-link">Films</a>
+            <ul class="subcategory_films">
+              <li><a href="#">News</a></li>
+              <li><a href="filmreviews.html">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="literature-link">Literature</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="theatre-link">Theatre</a>
+            <ul class="subcategory">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="photo-link">Photo series</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <div class="title-and-breadcrumbs">
         <h1 class="page_title" id="reviews">ARTISTS</h1>
-        <p class="breadcrumbs"><a href="../index.html" class="link_text">Home</a> &gt; <a href="art.html" class="link_text">Art &amp; Design</a> &gt; <a href="../subpages/artanddesign.html" class="link_text">Artists</a> &gt; Olafur Eliasson</p>
-        <div class="wrapper_container">
+        <p class="breadcrumbs">
+          <a href="../index.html" class="link_text">Home</a> &gt;
+          <a href="art.html" class="link_text">Art &amp; Design</a> &gt;
+          <a href="../artanddesign.html" class="link_text">Artists</a>
+          &gt; Olafur Eliasson
+        </p>
+      </div>
+      <div class="wrapper_container">
+        <article class="article_content">
+          <div class="article-header">
+            <h2>ETERNAL SUNSHINE OF THE SPOTLESS MIND</h2>
+            <br />
+            <p class="quote">
+              Olafur Eliasson - a Visual Artist Who Offers More Than Art
+            </p>
+            <br />
+            <img
+              src="../images/Olafur%20Eliasson.jpg"
+              class="article_image"
+              alt="Olafur_Eliasson"
+            />
+            <p class="image_credit">
+              Olafur Eliasson. Photo credit: Runa Maya Mørk Huber ;&#124; Studio
+              Olafur Eliasson. © 2017 Olafur Eliasson.
+            </p>
 
+            <p class="dateandauthor">
+              November 5, 2019<br />
+              Reviewed by Bilyana Karamfilova
+            </p>
+            <br />
+          </div>
+          <p style="font-size: 18px; font-weight: bold;">Olafur Eliasson</p>
+          <p>
+            is а Danish-Icelandic artist born in 1967 renowned for his
+            sculptures and large-scale art installations where he combines
+            materials such as light, water, wood and air temperature to deepen
+            the viewer’s experience. He is also an architect, product designer,
+            film-maker, photographer, culinary artist and eco-activist. Much of
+            his projects explore the common ground between space and nature and
+            art and science. Some of his art installations consider topics as
+            climate change, sustainability, nature and weather, self-awareness
+            and the perception of the reality.
+          </p>
+          <br />
+          <div class="photo_gallery">
+            <img
+              src="../images/IceWatch.jpg"
+              class="article_image"
+              alt="Ice_Watch"
+            />
+            <p class="image_credit">
+              "Ice Watch" outside Tate Modern, 2018. Photo credit: DANIEL
+              LEAL-OLIVAS/AFP
+            </p>
+            <img
+              src="../images/InnerCityOut.jpg"
+              class="article_image"
+              alt="InnerCityOut"
+            />
+            <p class="image_credit">
+              "Inner City Out", Berlin, 2010. Photo credit: Spiegel.de
+            </p>
+            <img
+              src="../images/Weather_The_Weather.jpg"
+              class="article_image"
+              alt="WeathertheWeather"
+            />
+            <p class="image_credit">
+              "Weather the Weather", Denmark, 2016. Photo credit: Anders Sune
+              Berg
+            </p>
+          </div>
+          <br />
+          <p>
+            Eliasson’s art concept is exploration of a real natural phenomenon,
+            which he interprets in a new and unexpected way and makes it an
+            unforgettable experience for the viewer. Experience is the key word
+            in his art. He often emphasizes that
+            <a
+              href="https://www.artspace.com/magazine/interviews_features/book_report/without-the-viewer-there-is-nothing-olafur-eliasson-on-positioning-the-audience-and-the-notion-of-55556"
+              class="hiperlink"
+              >without the viewer there is nothing.</a
+            >
+          </p>
+          <br />
+          <p>
+            He is passionate about reaching as much audience as possible and
+            involve it in his art projects. The audience is active part of his
+            exhibitions.
+          </p>
+          <br />
+          <p class="quote_art">
+            "The people who visit my exhibitions are actually the creators of
+            the project content. And this is no coincidence. I was always
+            interested in the question whether we are participants or creators
+            of art as visitors, because in fact our interpretation of any work
+            created by another artist is actually a new form of art."
+          </p>
+          <br />
+          <div class="photo_gallery">
+            <img
+              src="../images/RoomforOneColour.jpg"
+              class="article_image"
+              alt="RoomForOneColour"
+            />
+            <p class="image_credit">
+              "Room for One Colour" at Moderna Museet, Stockholm, 2005. Photo
+              credit: Anders Sune Berg
+            </p>
+            <img
+              src="../images/Contact.jpg"
+              class="article_image"
+              alt="Contact"
+            />
+            <p class="image_credit">
+              "Contact" at Fondation Louis Vuitton, Paris, France, 2014. Photo
+              credit: Iwan Baan
+            </p>
+          </div>
+          <br />
+          <p>
+            Every project of Olafur Eliasson is an invitation to go beyond the
+            comfort zone and to explore new worlds. He believes that art can
+            have a strong impact on the world outside the museum. In many of his
+            works the boundaries between the inside and outside are dissolved.
+          </p>
+          <br /><br />
+          <h3
+            class="headers"
+            style="border-top: 2px solid #5E81AC; border-bottom: 2px solid #5E81AC; text-align: center; padding: 10px 10px; font-size: 20px;"
+          >
+            Three Masterpieces of Olafur Eliasson
+          </h3>
+          <br />
+          <h4 style="font-size: 16px; text-transform: uppercase;">
+            "The Weather project", 2003
+          </h4>
+          <br />
 
-            <article class="article_content">
-                <div class="article-header">
-                    <h2>ETERNAL SUNSHINE OF THE SPOTLESS MIND</h2><br>
-                    <p class="quote">Olafur Eliasson - a Visual Artist Who Offers More Than Art</p><br>
-                    <img src="../images/Olafur%20Eliasson.jpg" class="article_image" alt="Olafur_Eliasson">
-                    <p class="image_credit">Olafur Eliasson. Photo credit: Runa Maya Mørk Huber ;&#124; Studio Olafur Eliasson. © 2017 Olafur Eliasson.</p>
+          <img
+            src="../images/Sun.jpg"
+            class="article_image"
+            alt="TheSun"
+          /><br />
+          <p class="image_credit">
+            Olafur Eliasson’s artifical sun blazes in the Turbine Hall of Tate
+            Modern, 2003. Photo credit: Dan Chung/The Guardian
+          </p>
+          <br />
+          <p>
+            The weather project was installed at the London's
+            <a href="https://www.tate.org.uk/" class="hiperlink">Tate Modern</a>
+            in 2003 as part of the popular
+            <a
+              href="https://www.tate.org.uk/whats-on/tate-modern/exhibition/unilever-series"
+              class="hiperlink"
+              >Unilever series</a
+            >. The installation is placed at the open space of the gallery's
+            Turbine Hall.<br />
+            With this incredible project, as with many of his works, he
+            expresses the relationship between nature and the city and how the
+            nature can be experienced in the city. He recreated a big yellow
+            burning sun inside the Turbine Hall where the visitors can just lay
+            down under it and enjoy the atmosphere it creates. Even dough it
+            looks warm the installation does not give out any additional heat.
+            The room is also filled with mist made of sugar and water. More than
+            300 mirrors were used for the ceiling so that the visitors could see
+            themselves as tiny black silhouettes against a mass of orange light
+            symbolizing the sun. Eliasson uses light, wind, steam, fire, water
+            and ice and combines these materials with modern technology in
+            unexpected ways. The installation is a kind of escape from the rainy
+            weather outside.<br />
+            <br /><img
+              src="../images/Olafur-Eliasson-The-Weather-Project-2003.jpg"
+              class="article_image"
+              alt="TheWeatherProject"
+            />
+          </p>
+          <br />
+          <h4 style="font-size: 16px; text-transform: uppercase;">
+            "Your Rainbow Panorama", 2011
+          </h4>
+          <br />
+          <img
+            src="../images/mads-schmidt-rasmussen-unsplash.jpg"
+            class="article_image"
+            alt="YourRainbowPanorama1"
+          /><br />
+          <p class="image_credit">
+            Your Rainbow Panorama. Photo credit: Mads
+            Schmidt-Rasmussen/Unsplash.com
+          </p>
+          <br />
+          <p>
+            Olafur's installation "Your rainbow panorama" is a glass
+            kaleidoscopic circular corridor which consists every color of the
+            spectrum and where you can walk inside. It reminds of a rainbow. It
+            is installed on the rooftop of the
+            <a href="https://en.aros.dk" class="hiperlink"
+              >ARoS Aarhus Kunstmuseum</a
+            >
+            in Aarhus in May 2011.<br />
+            The idea of "Your Rainbow Panorama" is inspired by the poet Dante
+            Alighieri’s story in “The Divine Comedy” and is designed as a
+            journey from hell to paradise and the panorama on the rooftop
+            represents the heaven and the perfection. In 2004 ARoS Aarhus Art
+            Museum was designed as a metaphor for the Dante’s poem containing 9
+            galleries and a spectacular spiral staircase.<br />
+            <br /><img
+              src="../images/pierre-chatel-innocenti-unsplash.jpg"
+              class="article_image"
+              alt="YourRainbowPanorama2"
+            />
+          </p>
+          <br />
+          <h4 style="font-size: 16px; text-transform: uppercase;">
+            The New York City Waterfalls, 2008
+          </h4>
+          <br />
+          <img
+            src="../images/NYC_Waterfalls_Brooklyn_Br.jpg"
+            class="article_image"
+            alt="NYCWaterfalls"
+          /><br />
+          <p class="image_credit">
+            "The Waterfall" under the Brooklyn Bridge. Photo credit: Adam
+            Brown/Wikipedia.org
+          </p>
+          <br />
+          <p>
+            Olafur Eliasson designed four giant waterfalls positioned in four
+            iconic historical places by Manhattan’s East river as
+            <a
+              href="https://www.publicartfund.org/exhibitions/view/the-new-york-city-waterfalls/"
+              class="hiperlink"
+              >public art</a
+            >
+            for the city. He built the waterfalls using the scaffolding
+            technique which is a common feature of Manhattan.
+          </p>
+          <br />
+          <p class="quote_art">
+            “In developing The New York City Waterfalls, I have tried to work
+            with today’s complex notion of public spaces,” said Eliasson. “The
+            Waterfalls appear in the midst of the dense social, environmental,
+            and political tissue that makes up the heart of New York City. They
+            will give people the possibility to reconsider their relationships
+            to these spectacular surroundings, and I hope they will evoke
+            individual experiences and enhance a sense of collectivity.”
+          </p>
+          <br />
+          <p style="font-size: 18px; padding-top: 5px;">
+            Eliasson's artworks provoke the senses and the creativity of the
+            audience and from passive observer makes us active participants
+            because he wants to establish a sense of “community”, “of being
+            together”, “of democracy”. [See his TED talk
+            <a
+              href="https://www.ted.com/talks/olafur_eliasson_playing_with_space_and_light/up-next?language=en"
+              class="hiperlink"
+              >“Playing with Space and Light”</a
+            >
+            from 2009.]
+          </p>
+          <br />
 
-                    <p class="dateandauthor">November 5, 2019<br>
-                        Reviewed by Bilyana Karamfilova
-                    </p><br>
+          <div class="comment-form">
+            <div class="form-fields">
+              <input type="text" class="input" placeholder="Your name" />
+            </div>
+            <div class="form-fields">
+              <textarea
+                class="input comment"
+                placeholder="Add a comment.."
+                rows="5"
+              ></textarea>
+            </div>
 
-                </div>
-                <p style="font-size: 18px; font-weight: bold;">Olafur Eliasson</p>
-                <p>is а Danish-Icelandic artist born in 1967 renowned for his sculptures and large-scale art installations where he combines materials such as light, water, wood and air temperature to deepen the viewer’s experience. He is also an architect, product designer, film-maker, photographer, culinary artist and eco-activist. Much of his projects explore the common ground between space and nature and art and science. Some of his art installations consider topics as climate change, sustainability, nature and weather, self-awareness and the perception of the reality. </p><br>
-                <div class="photo_gallery">
-                    <img src="../images/IceWatch.jpg" class="article_image" alt="Ice_Watch">
-                    <p class="image_credit">"Ice Watch" outside Tate Modern, 2018. Photo credit: DANIEL LEAL-OLIVAS/AFP</p>
-                    <img src="../images/InnerCityOut.jpg" class="article_image" alt="InnerCityOut">
-                    <p class="image_credit">"Inner City Out", Berlin, 2010. Photo credit: Spiegel.de</p>
-                    <img src="../images/Weather_The_Weather.jpg" class="article_image" alt="WeathertheWeather">
-                    <p class="image_credit">"Weather the Weather", Denmark, 2016. Photo credit: Anders Sune Berg</p>
-                </div><br>
-                <p>Eliasson’s art concept is exploration of a real natural phenomenon, which he interprets in a new and unexpected way and makes it an unforgettable experience for the viewer. Experience is the key word in his art. He often emphasizes that <a href="https://www.artspace.com/magazine/interviews_features/book_report/without-the-viewer-there-is-nothing-olafur-eliasson-on-positioning-the-audience-and-the-notion-of-55556" class="hiperlink">without the viewer there is nothing.</a> </p><br>
-                <p>He is passionate about reaching as much audience as possible and involve it in his art projects. The audience is active part of his exhibitions. </p><br>
-                <p class="quote_art">"The people who visit my exhibitions are actually the creators of the project content. And this is no coincidence. I was always interested in the question whether we are participants or creators of art as visitors, because in fact our interpretation of any work created by another artist is actually a new form of art."
-                </p><br>
-                <div class="photo_gallery">
-                    <img src="../images/RoomforOneColour.jpg" class="article_image" alt="RoomForOneColour">
-                    <p class="image_credit">"Room for One Colour" at Moderna Museet, Stockholm, 2005. Photo credit: Anders Sune Berg</p>
-                    <img src="../images/Contact.jpg" class="article_image" alt="Contact">
-                    <p class="image_credit">"Contact" at Fondation Louis Vuitton, Paris, France, 2014. Photo credit: Iwan Baan</p>
-                </div><br>
-                <p>Every project of Olafur Eliasson is an invitation to go beyond the comfort zone and to explore new worlds. He believes that art can have a strong impact on the world outside the museum. In many of his works the boundaries between the inside and outside are dissolved.</p><br><br>
-                <h3 class="headers" style="border-top: 2px solid #5E81AC; border-bottom: 2px solid #5E81AC; text-align: center; padding: 10px 10px; font-size: 20px;">Three Masterpieces of Olafur Eliasson</h3><br>
-                <h4 style="font-size: 16px; text-transform: uppercase;">"The Weather project", 2003</h4><br>
-
-                <img src="../images/Sun.jpg" class="article_image" alt="TheSun"><br>
-                <p class="image_credit">Olafur Eliasson’s artifical sun blazes in the Turbine Hall of Tate Modern, 2003. Photo credit: Dan Chung/The Guardian</p><br>
-                <p>The weather project was installed at the London's <a href="https://www.tate.org.uk/" class="hiperlink">Tate Modern</a> in 2003 as part of the popular <a href="https://www.tate.org.uk/whats-on/tate-modern/exhibition/unilever-series" class="hiperlink">Unilever series</a>. The installation is placed at the open space of the gallery's Turbine Hall.<br>
-                    With this incredible project, as with many of his works, he expresses the relationship between nature and the city and how the nature can be experienced in the city. He recreated a big yellow burning sun inside the Turbine Hall where the visitors can just lay down under it and enjoy the atmosphere it creates. Even dough it looks warm the installation does not give out any additional heat. The room is also filled with mist made of sugar and water. More than 300 mirrors were used for the ceiling so that the visitors could see themselves as tiny black silhouettes against a mass of orange light symbolizing the sun. Eliasson uses light, wind, steam, fire, water and ice and combines these materials with modern technology in unexpected ways. The installation is a kind of escape from the rainy weather outside.<br>
-                    <br><img src="../images/Olafur-Eliasson-The-Weather-Project-2003.jpg" class="article_image" alt="TheWeatherProject">
-                </p><br>
-                <h4 style="font-size: 16px; text-transform: uppercase;">"Your Rainbow Panorama", 2011</h4><br>
-                <img src="../images/mads-schmidt-rasmussen-unsplash.jpg" class="article_image" alt="YourRainbowPanorama1"><br>
-                <p class="image_credit">Your Rainbow Panorama. Photo credit: Mads Schmidt-Rasmussen/Unsplash.com</p><br>
-                <p>Olafur's installation "Your rainbow panorama" is a glass kaleidoscopic circular corridor which consists every color of the spectrum and where you can walk inside. It reminds of a rainbow. It is installed on the rooftop of the <a href="https://en.aros.dk" class="hiperlink">ARoS Aarhus Kunstmuseum</a> in Aarhus in May 2011.<br>
-                    The idea of "Your Rainbow Panorama" is inspired by the poet Dante Alighieri’s story in “The Divine Comedy” and is designed as a journey from hell to paradise and the panorama on the rooftop represents the heaven and the perfection. In 2004 ARoS Aarhus Art Museum was designed as a metaphor for the Dante’s poem containing 9 galleries and a spectacular spiral staircase.<br>
-                    <br><img src="../images/pierre-chatel-innocenti-unsplash.jpg" class="article_image" alt="YourRainbowPanorama2">
-                </p><br>
-                <h4 style="font-size: 16px; text-transform: uppercase;">The New York City Waterfalls, 2008</h4><br>
-                <img src="../images/NYC_Waterfalls_Brooklyn_Br.jpg" class="article_image" alt="NYCWaterfalls"><br>
-                <p class="image_credit">"The Waterfall" under the Brooklyn Bridge. Photo credit: Adam Brown/Wikipedia.org</p><br>
-                <p>Olafur Eliasson designed four giant waterfalls positioned in four iconic historical places by Manhattan’s East river as <a href="https://www.publicartfund.org/exhibitions/view/the-new-york-city-waterfalls/" class="hiperlink">public art</a> for the city. He built the waterfalls using the scaffolding technique which is a common feature of Manhattan.</p><br>
-                <p class="quote_art">“In developing The New York City Waterfalls, I have tried to work with today’s complex notion of public spaces,” said Eliasson. “The Waterfalls appear in the midst of the dense social, environmental, and political tissue that makes up the heart of New York City. They will give people the possibility to reconsider their relationships to these spectacular surroundings, and I hope they will evoke individual experiences and enhance a sense of collectivity.”
-                </p><br>
-                <p style="font-size: 18px; padding-top: 5px;">Eliasson's artworks provoke the senses and the creativity of the audience and from passive observer makes us active participants because he wants to establish a sense of “community”, “of being together”, “of democracy”. [See his TED talk <a href="https://www.ted.com/talks/olafur_eliasson_playing_with_space_and_light/up-next?language=en" class="hiperlink">“Playing with Space and Light”</a> from 2009.] </p><br>
-
-
-                <div class="comment-form">
-
-                    <div class="form-fields">
-                        <input type="text" class="input" placeholder="Your name">
-
-                    </div>
-                    <div class="form-fields">
-                        <textarea class="input comment" placeholder="Add a comment.." rows="5"></textarea>
-                    </div>
-
-                    <div class="btn">
-                        <input type="submit" class="button_text" value="Comment">
-
-
-                    </div>
-                </div>
-            </article>
-        </div>
-
+            <div class="btn">
+              <input type="submit" class="button_text" value="Comment" />
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
 
-
     <footer>
-        <div class="footer_container">
-            <div class="contact_form">
-                <a href="#" class="btncontact">Write us</a>
-            </div>
-            <div class="newsletter">
-                <form action="">
-                    <div class="email-box">
-                        <i class="fas fa-envelope-square"></i>
-                        <input class="textbox" type="email" name="email" value="email" placeholder="Write your email">
-                        <button class="btnsubscribe" type="button" name="button">SUBSCRIBE</button>
-                    </div>
-
-                </form>
-            </div>
-
-            <div class="social_menu">
-                <ul>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-
-                </ul>
-            </div>
+      <div class="footer_container">
+        <div class="contact_form">
+          <a href="#" class="btncontact">Write us</a>
         </div>
+        <div class="newsletter">
+          <form action="">
+            <div class="email-box">
+              <i class="fas fa-envelope-square"></i>
+              <input
+                class="textbox"
+                type="email"
+                name="email"
+                value="email"
+                placeholder="Write your email"
+              />
+              <button class="btnsubscribe" type="button" name="button">
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="social_menu">
+          <ul>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
     </footer>
-
-
-
-
-
-
-
-
-
-</body></html>
+  </body>
+</html>
