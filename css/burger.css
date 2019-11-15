@@ -234,17 +234,6 @@
     margin-top: 2px;
 }
 
-.menu2 {
-    display: flex;
-
-    word-spacing: 5px;
-    font-size: 14px;
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
-    list-style: none;
-    float: right;
-}
 
 
 @media only screen and (min-width: 768px) {
@@ -269,6 +258,7 @@
     display: inline-block;
     padding-top: 25px;
     padding-left: 20px;
+      z-index: 1;
   }
 
     .input_searchfield {
@@ -318,7 +308,7 @@
     padding: 20px 60px 30px;
     transition: all 0.4s ease;
     opacity: 1;
-    z-index: -1;
+    z-index: 1;
   }
 
   /* Change the display of the submenu items */
