@@ -48,6 +48,7 @@ header {
     opacity: 0.85;
     padding: 5px;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 .breadcrumbs {
@@ -329,24 +330,7 @@ btnsubscribe {
     justify-content: center;
 }
 
-/* Styling the Photo Story page */
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    background: #000;
-}
 
-.heading:first-child {
-    background: url (reinhart-julian-WxM465oM4j4-unsplash.jpg);
-    background-size: cover;
-}
-
-.heading:last-child {
-    background: url (simon-marsault-bDJOs9Th2GQ-unsplash.jpg);
-    background-size: cover;
-}
 
 @media(min-width:768px) {
     .main {
@@ -354,6 +338,20 @@ btnsubscribe {
 
     }
 
+    .photo_gallery {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .masterpiece {
+        background: #5E81AC;
+        color: white;
+        margin-right: 60%;
+        font-size: 16px;
+        text-transform: uppercase;
+        align-items: center;
+    }
     .title-and-breadcrumbs {
         padding: 60px;
         40px;
@@ -370,6 +368,7 @@ btnsubscribe {
         padding-top: 5px;
         position: relative;
         z-index: 100;
+        margin-top: 5px;
     }
 
     .breadcrumbs a {
@@ -427,8 +426,7 @@ btnsubscribe {
         padding: 5px 5px;
         margin-top: 5px;
         background-color: #f0f8ff;
-        font-size: 16px;
-        font-style: italic;
+        font-size: 14px;
         width: 100%;
         text-align: left;
 
@@ -484,9 +482,19 @@ btnsubscribe {
 
     }
 
+.page_title {
+    font-size: 18px;
+    display: inline-block;
+    border: 2px solid #4C566A;
+    opacity: 0.85;
+    padding: 5px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
     .article_image {
         width: 70%;
-        display: block;
+        display: flex;
         margin: auto;
     }
 

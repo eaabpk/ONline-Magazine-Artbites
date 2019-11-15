@@ -269,11 +269,12 @@
     .logo {
         position: relative;
         display: inline-block;
-        padding-left: 10px;
         z-index: 99;
         margin-top: 30px;
-        margin-left: 10px;
+
+
     }
+
 
     .input_searchfield {
         float: left;
