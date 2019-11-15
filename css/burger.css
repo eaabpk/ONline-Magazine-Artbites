@@ -204,6 +204,49 @@
   color: white;
 }
 
+.input_searchfield {
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-left: grey solid 1px;
+    border-top: grey solid 1px;
+    border-bottom: grey solid 1px;
+    display: none;
+}
+
+.searchbutton {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: white;
+    font-size: 14px;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form_container {
+    float: right;
+    margin-top: 2px;
+}
+
+.menu2 {
+    display: flex;
+
+    word-spacing: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    list-style: none;
+    float: right;
+}
+
+
 @media only screen and (min-width: 768px) {
 
   /* Hide the burger menu on PCs */
@@ -221,10 +264,43 @@
 
   /* Change the position of the logo */
   .logo {
-    height: 60px;
+    height: 100px;
     position: relative;
     display: inline-block;
+    padding-top: 25px;
+    padding-left: 20px;
   }
+
+    .input_searchfield {
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-left: grey solid 1px;
+    border-top: grey solid 1px;
+    border-bottom: grey solid 1px;
+
+}
+
+.searchbutton {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 40px;
+    margin-right: 5px;
+    background: white;
+    font-size: 20px;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form_container {
+    float: right;
+    margin-top: 2px;
+}
+
 
   #menu-list {
     width: 100%;
@@ -235,14 +311,14 @@
     height: auto;
     left: 0;
     background: white;
-    align-items: flex-start;
-    justify-content: left;
-    text-align: left;
-    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
     padding: 20px 60px 30px;
     transition: all 0.4s ease;
     opacity: 1;
-    z-index: 1;
+    z-index: -1;
   }
 
   /* Change the display of the submenu items */

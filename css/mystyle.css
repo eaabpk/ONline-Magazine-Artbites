@@ -19,7 +19,7 @@ header {
   z-index: 99;
 }
 
-main {
+.main {
   padding: 16px 20px;
 }
 
@@ -344,7 +344,7 @@ btnsubscribe {
 }
 
 @media(min-width:768px) {
-  main {
+  .main {
     padding: 100px 20px;
   }
 
