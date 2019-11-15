@@ -346,10 +346,14 @@ btnsubscribe {
 @media(min-width:768px) {
   .main {
     padding: 100px 20px;
+
   }
 
   .title-and-breadcrumbs {
-    padding: 0 40px;
+    padding: 60px; 40px;
+      position: relative;
+      z-index: 90;
+
   }
 
   .breadcrumbs {
@@ -358,6 +362,8 @@ btnsubscribe {
     float: right;
     border-top: 5px solid #4C566A;
     padding-top: 5px;
+      position: relative;
+      z-index: 100;
   }
 
   .breadcrumbs a {
