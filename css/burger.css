@@ -258,7 +258,7 @@
     display: inline-block;
     padding-top: 25px;
     padding-left: 20px;
-      z-index: 1;
+      z-index: 99;
   }
 
     .input_searchfield {
