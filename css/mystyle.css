@@ -1,421 +1,71 @@
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
-  top: 0;
-  position: sticky;
-  background: #fff;
-  z-index: 99;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    z-index: 99;
 }
 
 .main {
-  padding: 16px 20px;
+    padding: 16px 20px;
 }
 
 .container {
-  max-height: 760px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-  display: flex;
+    max-height: 760px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+    display: flex;
 }
 
 .burger-link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .logo {
-  padding-left: 60px;
-  height: 60px;
+    padding-left: 60px;
+    height: 60px;
 }
 
 
 .page_title {
-  font-size: 18px;
-  display: inline-block;
-  border: 2px solid #4C566A;
-  opacity: 0.85;
-  padding: 5px;
+    font-size: 18px;
+    display: inline-block;
+    border: 2px solid #4C566A;
+    opacity: 0.85;
+    padding: 5px;
+    margin-left: 15px;
 }
 
 .breadcrumbs {
-  display: none;
+    display: none;
 }
 
 .title-and-breadcrumbs {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .quote_film {
-  font-size: 18px;
-  font-style: italic;
-  border-top: 4px solid #4C566A;
-  padding-top: 15px;
+    font-size: 18px;
+    font-style: italic;
+    border-top: 4px solid #4C566A;
+    padding-top: 15px;
 }
 
 .dateandauthor {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  padding: 5px 5px;
-  margin-top: 5px;
-  background-color: #f0f8ff;
-  font-size: 16px;
-  font-style: italic;
-
-}
-
-.image_credit {
-  font-style: italic;
-  font-weight: 100;
-  text-align: center;
-  padding-bottom: 5px;
-  font-size: 12px;
-}
-
-.article-header {
-  display: block;
-  justify-content: center;
-
-
-}
-
-.wrapper_container {
-  background-color: white;
-  text-align: justify;
-  line-height: 1.5;
-  display: block;
-}
-
-.wrapperindex_container {
-  padding-top: 60px;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-.article_image {
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-/*HYPERLINKS and other links*/
-
-.hiperlink {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-
-}
-
-.hiperlink:hover {
-  color: black;
-  background-color: transparent;
-  border-bottom: 5px solid #fbe555;
-  font-size: 18px;
-
-}
-
-.quote_art {
-  border-top: 1px solid #4C566A;
-  border-bottom: 1px solid #4C566A;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-width: medium;
-  border-top-width: medium;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-style: italic;
-  font-weight: 400;
-
-}
-
-
-
-/*COMMENT FORM*/
-.comment-form {
-  width: 100%;
-  max-width: 600px;
-  float: right;
-  top: 50%;
-  left: 50%;
-  justify-content: center;
-  padding: 20px 20px;
-
-}
-
-
-.form-fields {
-  width: 100%;
-
-
-}
-
-.form-fields .input {
-  width: 100%;
-  margin-bottom: 12px;
-  padding: 15px 10px;
-  box-sizing: border-box;
-  background: white;
-  outline-style: groove;
-
-}
-
-.form-fields .input .comment {
-  height: 125px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  padding: 15px;
-
-
-}
-
-.btn {
-  background: #fbe555;
-  color: black;
-  height: 40px;
-  text-align: center;
-  float: right;
-  border-radius: 30px;
-  cursor: pointer;
-
-}
-
-.button_text {
-  font-size: 18px;
-  text-align: center;
-  background: none;
-  padding: 7px;
-
-}
-
-.footer_container {
-  display: inline-block;
-  justify-content: center;
-  width: 110%;
-  height: 200px;
-  background: black;
-  text-align: center;
-
-
-}
-
-/*SUBSCRIBE FORM*/
-.email-box {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-
-}
-
-.email-box i {
-  background: #fbe555;
-  width: 38px;
-  line-height: 40px;
-  justify-content: center;
-  padding: 0 9px;
-
-}
-
-.textbox,
-btnsubscribe {
-  border: none;
-
-}
-
-.textbox {
-  width: 0px;
-  padding: 0;
-  border-right: 2px solid black;
-  transition: 0.6s;
-}
-
-.email-box:hover>.textbox,
-.textbox:focus {
-  width: 260px;
-  padding: 0 10px;
-}
-
-.btnsubscribe {
-  background: #fbe555;
-  color: black;
-  padding: 0 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.newsletter {
-  margin: 20px 0 20px 0;
-  text-align: center;
-
-
-}
-
-.contact_form {
-  width: 150px;
-  display: inline-block;
-  text-align: center;
-
-}
-
-/*WRITE US */
-
-
-.btncontact {
-  display: flex;
-  font-size: 18px;
-  height: 40px;
-  justify-content: center;
-  text-decoration: none;
-  justify-content: center;
-  border: 2px solid #5E81AC;
-  border-radius: 15px;
-  background: #5E81AC;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 1s all ease;
-  color: black;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-
-}
-
-.btncontact:hover {
-  background: transparent;
-  color: #5E81AC;
-}
-
-/*SOCIAL MEDIA*/
-.social_menu {
-  position: absolute;
-  display: inline-block;
-}
-
-
-
-.social_menu ul .fab {
-  font-size: 25px;
-  line-height: 20px;
-  transition: .6s;
-  color: gray;
-  text-align: center;
-  padding-top: 15px;
-
-}
-
-.icons {
-  justify-content: center;
-}
-
-/* Styling the Photo Story page */
-.heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30vh;
-  background: #000;
-}
-
-.heading:first-child {
-  background: url (reinhart-julian-WxM465oM4j4-unsplash.jpg);
-  background-size: cover;
-}
-
-.heading:last-child {
-  background: url (simon-marsault-bDJOs9Th2GQ-unsplash.jpg);
-  background-size: cover;
-}
-
-@media(min-width:768px) {
-  .main {
-    padding: 100px 20px;
-
-  }
-
-  .title-and-breadcrumbs {
-    padding: 60px; 40px;
-      position: relative;
-      z-index: 90;
-
-  }
-
-  .breadcrumbs {
-    display: inline;
-    text-align: right;
-    float: right;
-    border-top: 5px solid #4C566A;
-    padding-top: 5px;
-      position: relative;
-      z-index: 100;
-  }
-
-  .breadcrumbs a {
-    color: black;
-    transition: color .12s ease-out;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .video-container {
-    overflow: hidden;
-    width: 80%;
-    position: relative;
-    align-content: center;
-    margin: 0 auto;
-  }
-
-  .quote-text {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .quotecredit-text {
-    font-size: 20px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    opacity: 0.5;
-  }
-
-  .homequote_container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    z-index: 1;
-    width: 80%;
-
-  }
-
-  .bio_text {
-    width: 680px;
-    height: auto;
-  }
-
-  .image_credit {
-    font-size: 16px;
-  }
-
-  .dateandauthor {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     padding: 5px 5px;
@@ -423,82 +73,441 @@ btnsubscribe {
     background-color: #f0f8ff;
     font-size: 16px;
     font-style: italic;
-    width: 70%;
-    margin-left: 15%;
 
-  }
+}
 
-  .trailer {
-    width: 800px;
-    height: 400px;
-    align-content: center;
-  }
+.image_credit {
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
 
-  .comment-form {
+.article-header {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.wrapper_container {
+    background-color: white;
+    text-align: justify;
+    line-height: 1.5;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.wrapperindex_container {
+    padding-top: 60px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.article_image {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*HYPERLINKS and other links*/
+
+.hiperlink {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.hiperlink:hover {
+    color: black;
+    background-color: transparent;
+    border-bottom: 5px solid #fbe555;
+    font-size: 18px;
+
+}
+
+.quote_art {
+    border-top: 1px solid #4C566A;
+    border-bottom: 1px solid #4C566A;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-width: medium;
+    border-top-width: medium;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+
+
+/*COMMENT FORM*/
+.comment-form {
     width: 100%;
     max-width: 600px;
+    float: right;
     top: 50%;
     left: 50%;
     justify-content: center;
-    padding: 50px 60px;
+    padding: 20px 20px;
 
-  }
+}
 
-  .audio_text {
-    font-style: italic;
-    font-weight: bold;
-    align-items: center;
-    font-size: 14px;
-    border-top: 4px solid #EFBD59;
-    border-right: 4px solid #A3BE8C;
-    border-left: 4px solid #A3BE8C;
-    padding-top: 11px;
-    padding-left: 11px;
-    padding-right: 11px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-  }
 
-  .quote_film {
-    font-size: 18px;
-    font-style: italic;
-    border-top: 4px solid #4C566A;
-    border-top-left-radius: 50px;
-    padding-top: 15px;
-  }
+.form-fields {
+    width: 100%;
 
-  .quote {
-    font-style: italic;
-  }
 
-  .article-header {
+}
+
+.form-fields .input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    background: white;
+    outline-style: groove;
+
+}
+
+.form-fields .input .comment {
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+
+}
+
+.btn {
+    background: #fbe555;
+    color: black;
+    height: 40px;
     text-align: center;
+    float: right;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.button_text {
     font-size: 18px;
+    text-align: center;
+    background: none;
+    padding: 7px;
 
-  }
+}
 
-  .article_image {
-    width: 70%;
-    display: block;
-    margin: auto;
-  }
-
-  .wrapper_container {
-    padding: 16px 24px 16px 24px;
-    background-color: white;
-    line-height: 1.5;
-    display: block;
-  }
-
-  .footer_container {
-    display: flex;
-    justify-content: space-around;
+.footer_container {
+    display: inline-block;
+    justify-content: center;
     width: 110%;
     height: 200px;
     background: black;
+    text-align: center;
+
+
+}
+
+/*SUBSCRIBE FORM*/
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.email-box i {
+    background: #fbe555;
+    width: 38px;
+    line-height: 40px;
+    justify-content: center;
+    padding: 0 9px;
+
+}
+
+.textbox,
+btnsubscribe {
+    border: none;
+
+}
+
+.textbox {
+    width: 0px;
+    padding: 0;
+    border-right: 2px solid black;
+    transition: 0.6s;
+}
+
+.email-box:hover > .textbox,
+.textbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btnsubscribe {
+    background: #fbe555;
+    color: black;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter {
+    margin: 20px 0 20px 0;
+    text-align: center;
+
+
+}
+
+.contact_form {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/*WRITE US */
+
+
+.btncontact {
+    display: flex;
+    font-size: 18px;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    justify-content: center;
+    border: 2px solid #5E81AC;
+    border-radius: 15px;
+    background: #5E81AC;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.btncontact:hover {
+    background: transparent;
+    color: #5E81AC;
+}
+
+/*SOCIAL MEDIA*/
+.social_menu {
+    position: absolute;
+    display: inline-block;
+}
+
+
+
+.social_menu ul .fab {
+    font-size: 25px;
+    line-height: 20px;
+    transition: .6s;
+    color: gray;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.icons {
+    justify-content: center;
+}
+
+/* Styling the Photo Story page */
+.heading {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 30vh;
+    background: #000;
+}
+
+.heading:first-child {
+    background: url (reinhart-julian-WxM465oM4j4-unsplash.jpg);
+    background-size: cover;
+}
+
+.heading:last-child {
+    background: url (simon-marsault-bDJOs9Th2GQ-unsplash.jpg);
+    background-size: cover;
+}
+
+@media(min-width:768px) {
+    .main {
+        padding: 100px 20px;
+
+    }
+
+    .title-and-breadcrumbs {
+        padding: 60px;
+        40px;
+        position: relative;
+        z-index: 90;
+
+    }
+
+    .breadcrumbs {
+        display: inline;
+        text-align: right;
+        float: right;
+        border-top: 5px solid #4C566A;
+        padding-top: 5px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .breadcrumbs a {
+        color: black;
+        transition: color .12s ease-out;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .video-container {
+        overflow: hidden;
+        width: 80%;
+        position: relative;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .quote-text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .quotecredit-text {
+        font-size: 20px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        opacity: 0.5;
+    }
+
+    .homequote_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        z-index: 1;
+        width: 80%;
+
+    }
+
+    .bio_text {
+        width: 680px;
+        height: auto;
+    }
+
+    .image_credit {
+        font-size: 12px;
+    }
+
+    .dateandauthor {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 5px 5px;
+        margin-top: 5px;
+        background-color: #f0f8ff;
+        font-size: 16px;
+        font-style: italic;
+        width: 100%;
+        text-align: left;
 
 
-  }
+    }
+
+    .trailer {
+        width: 800px;
+        height: 400px;
+        align-content: center;
+    }
+
+    .comment-form {
+        width: 100%;
+        max-width: 600px;
+        top: 50%;
+        left: 50%;
+        justify-content: center;
+        padding: 50px 60px;
+
+    }
+
+    .audio_text {
+        font-style: italic;
+        font-weight: bold;
+        align-items: center;
+        font-size: 14px;
+        border-top: 4px solid #EFBD59;
+        border-right: 4px solid #A3BE8C;
+        border-left: 4px solid #A3BE8C;
+        padding-top: 11px;
+        padding-left: 11px;
+        padding-right: 11px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .quote_film {
+        font-size: 18px;
+        font-style: italic;
+        border-top: 4px solid #4C566A;
+        border-top-left-radius: 50px;
+        padding-top: 15px;
+    }
+
+    .quote {
+        font-style: italic;
+    }
+
+    .article-header {
+        text-align: center;
+        font-size: 18px;
+
+    }
+
+    .article_image {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    .wrapper_container {
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: white;
+        line-height: 1.5;
+        display: block;
+
+    }
+
+
+    .footer_container {
+        display: flex;
+        justify-content: space-around;
+        width: 110%;
+        height: 200px;
+        background: black;
+        align-items: center;
+
+
+    }
 
 }
