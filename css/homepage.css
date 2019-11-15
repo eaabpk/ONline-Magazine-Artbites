@@ -10,6 +10,11 @@
     margin-left: 20px;
 }
 
+.homepage_content {
+    background-color: #ddd;
+    padding-top: 2px;
+}
+
 .quote-text {
   font-size: 18px;
   background-color: white;
